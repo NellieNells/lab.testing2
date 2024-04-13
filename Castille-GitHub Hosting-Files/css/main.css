@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 3rem;
+}
+
+h1{
+    text-align: center;
+    padding: 4rem;
+}
+
+/*global styles*/
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(19, 30, 29);
+    padding: 1rem;
+    color: white;
+}
+
+
+nav a:link, nav a:visited{
+    color: white; 
+    text-decoration: none;  
+}
+
+nav a:hover, nav a:active{
+    color: blue;
+}
+
+
+/* card gallery styles*/
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#cardGallery{
+    gap: 2rem;
+}
+
+#Floral{
+    background-image: url("../img/blue\ flowers.jpg");
+}
+
+#Koi{
+    background-image: url("../img/koi\ fishes.jpg");
+}
+
+#Jelly{
+    background-image: url("../img/jellyfish.jpg");
+}
+.cardContainer{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40rem;
+    width: 25rem;
+}
+
+.cardCopy{
+    flex-direction: column;
+
+    color: rgb(255, 252, 252);
+   background-color: rgba(57, 100, 229, 0.7);
+    min-height: 40rem;
+    width: 25rem;
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.cardCopy:hover{
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1rem; 
+    color: white;
+    min-height: 60vh;
+}
